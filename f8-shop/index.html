@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css" rel="stylesheet"
+    type="text/css" />
   <title>F8 shop</title>
 </head>
 
@@ -20,10 +22,11 @@
       <div class="grid">
         <nav class="header__navbar">
           <ul class="header__navbar-list">
-            <li class="header__navbar-item header__navbar-item--has-qr hheader__navbar-item--separate">
+            <li class="header__navbar-item header__navbar-item--hover header__navbar-item--separate">
               Vào cửa hàng trên ứng dụng F8-shop
 
               <!-- QR code -->
+
               <div class="header__qr">
                 <img class="header__qr-img" src="./asset/img/qr_code.png" alt="QR code">
                 <div class="header__qr-apps">
@@ -38,17 +41,95 @@
             </li>
             <li class="header__navbar-item">
               <span class="header__navbar-title--no-pointer">Kết nối</span>
-              <a class="header__navbar-item-link" href="#"><i class="header__navbar-icon fab fa-facebook"></i></a>
-              <a class="header__navbar-item-link" href="#"><i class="header__navbar-icon fab fa-instagram"></i></a>
+              <a class="header__navbar-item-link" href="#">
+                <i class="header__navbar-icon fab fa-facebook"></i>
+              </a>
+              <a class="header__navbar-item-link" href="#">
+                <i class="header__navbar-icon fab fa-instagram-square"></i>
+              </a>
             </li>
           </ul>
 
+          <!-- END -->
+
           <ul class="header__navbar-list">
-            <li class="header__navbar-item">
+            <li class="header__navbar-item header__navbar-item--has-noti">
               <a class="header__navbar-item-link" href="#">
-                <i class="header__navbar-icon fas fa-bell"></i>
+                <i class="header__navbar-icon far fa-bell"></i>
                 Thông báo
               </a>
+
+              <!-- Notification -->
+              <div class="header__notify">
+                <header class="header__notify-header">
+                  <span>Thông Báo Mới Nhận</span>
+                </header>
+                <ul class="header__notify-list">
+                  <li class="header__notify-item">
+                    <a class="header__notify-link header__notify-link--un-read" href="#">
+                      <img class="header__notify-img" src="https://cf.shopee.vn/file/5ca96fa723b6497901d396c2b617bd15"
+                        alt="Sản phẩm">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">
+                          Nước Hoa Hồng Dưỡng Ẩm Chống Viêm Cân Bằng Độ PH Moisture Toner Laskin 140ml
+                        </span>
+                        <span class="header__notify-describe">
+                          Toner Laskin - Dưỡng ẩm, làm sạch sâu - Ngăn ngừa lão hóa nhờ tinh chất tế bào gốc thực vật.
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a class="header__notify-link" href="#">
+                      <img class="header__notify-img" src="https://cf.shopee.vn/file/1cabef160d634f629f067c1592ed6616"
+                        alt="Sản phẩm">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">
+                          Nước Hoa Hồng Dưỡng Ẩm Chống Viêm Cân Bằng Độ PH Moisture Toner Laskin 140ml
+                        </span>
+                        <span class="header__notify-describe">
+                          Toner Laskin - Dưỡng ẩm, làm sạch sâu - Ngăn ngừa lão hóa nhờ tinh chất tế bào gốc thực vật.
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a class="header__notify-link" href="#">
+                      <img class="header__notify-img" src="https://cf.shopee.vn/file/517bbce6b005a4b362789c482f91f50d"
+                        alt="Sản phẩm">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">
+                          Nước Hoa Hồng Dưỡng Ẩm Chống Viêm
+                        </span>
+                        <span class="header__notify-describe">
+                          Toner Laskin - Dưỡng ẩm, làm sạch sâu
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a class="header__notify-link" href="#">
+                      <img class="header__notify-img" src="https://cf.shopee.vn/file/5ca96fa723b6497901d396c2b617bd15"
+                        alt="Sản phẩm">
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">
+                          Nước Hoa Hồng Dưỡng Ẩm Chống Viêm Cân Bằng Độ PH Moisture Toner Laskin 140ml
+                        </span>
+                        <span class="header__notify-describe">
+                          Toner Laskin - Dưỡng ẩm, làm sạch sâu - Ngăn ngừa lão hóa nhờ tinh chất tế bào gốc thực vật.
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <footer class="header__notify-footer">
+                  <a class="header__notify-footer-btn" href="#">
+                    Xem tất cả
+                  </a>
+                </footer>
+              </div>
+
+              <!-- End -->
             </li>
             <li class="header__navbar-item">
               <a class="header__navbar-item-link" href="#">
@@ -73,6 +154,66 @@
     <footer class="footer">
 
     </footer>
+
+    <!-- Modal layout -->
+
+    <div class="modal">
+      <div class="modal__overlay">
+
+      </div>
+      <div class="modal__body">
+        <div class="modal__inner">
+
+          <!-- Authentication Form -->
+          <div class="auth-form">
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng ký</h3>
+                <span class="auth-form__switch-button">Đăng nhập</span>
+              </div>
+
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input type="text" placeholder="Email của bạn" class="auth-form__input" />
+                </div>
+                <div class="auth-form__group">
+                  <input type="password" placeholder="Mật khẩu của bạn" class="auth-form__input" />
+                </div>
+                <div class="auth-form__group">
+                  <input type="password" placeholder="Nhập lại mật khẩu" class="auth-form__input" />
+                </div>
+              </div>
+
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  Bằng việc đăng ký, bạn đã đồng ý với F8-shop về
+                </p>
+                <a class="auth-form__policy-link" href="#">Điều khoản dịch vụ</a> &
+                <a class="auth-form__policy-link" href="#">Chính sách bảo mật</a>
+              </div>
+              <div class="auth-form__form-controls">
+                <button class="btn" type="submit">TRỞ LẠI</button>
+                <button class="btn btn-primary" type="submit">ĐĂNG KÝ</button>
+              </div>
+            </div>
+            <div class="auth-form__social-media">
+              <a class="btn btn--with-icon" href="#">
+                <i class="fab fa-facebook-square"></i>
+                Kết nối với Facebook
+              </a>
+              <a class="btn btn--with-icon" href="#">
+                <i class="fab fa-google"></i>
+                Kết nối với Google
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- END -->
+
   </div>
 </body>
 
