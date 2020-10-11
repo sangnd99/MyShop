@@ -2,6 +2,10 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --primary-color: #ee4d2d;
+  --border-color: #dbdbdb;
+  --header-height: 120px;
+  --navbar-height: 28px;
 }
 
 * {
@@ -17,7 +21,7 @@ html {
 }
 
 .grid {
-  width: 1820px;
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -39,4 +43,50 @@ html {
   to {
     opacity: 1;
   }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
+/* Button style */
+
+.btn {
+  min-width: 14rem;
+  min-height: 3.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  padding: 0 12px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn.btn-disabled {
+  background-color: #C3C3C3;
+  color: #7E7070;
+}
+
+.btn.btn--size-m {
+  min-height: 4rem;
+  font-size: 1.2rem;
 }
