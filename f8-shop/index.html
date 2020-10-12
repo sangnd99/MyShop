@@ -12,7 +12,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css" rel="stylesheet"
     type="text/css" />
-  <title>F8 shop</title>
+  <title>Shopee</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <nav class="header__navbar">
           <ul class="header__navbar-list">
             <li class="header__navbar-item header__navbar-item--hover header__navbar-item--separate">
-              Vào cửa hàng trên ứng dụng F8-shop
+              Vào cửa hàng trên ứng dụng Shopee
 
               <!-- QR code -->
 
@@ -60,6 +60,7 @@
               </a>
 
               <!-- Notification -->
+
               <div class="header__notify">
                 <header class="header__notify-header">
                   <span>Thông Báo Mới Nhận</span>
@@ -130,6 +131,7 @@
               </div>
 
               <!-- End -->
+
             </li>
             <li class="header__navbar-item">
               <a class="header__navbar-item-link" href="#">
@@ -160,7 +162,23 @@
             </svg>
           </div>
           <div class="header__logo-search">
-            <input class="header__logo-search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
+            <div class="header__logo-search-input-wrapper">
+              <input class="header__logo-search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
+              <div class="header__search-history">
+                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                <ul class="header__search-history-list">
+                  <li class="header__search-history-item">
+                    <a href="#">Kem dưỡng da</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="#">Kem trị mụn</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="#">Sửa rửa mặt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="header__logo-select">
               <span class="header__logo-select-label">Trong shop</span>
               <i class="header__logo-select-icon far fa-chevron-down"></i>
@@ -179,8 +197,19 @@
               <i class="header__search-btn-icon far fa-search"></i>
             </button>
           </div>
+
+          <!-- Cart layout -->
+
           <div class="header__logo-cart">
-            <i class="header__cart-icon far fa-shopping-cart"></i>
+            <div class="header__cart-wrapper">
+              <i class="header__cart-icon far fa-shopping-cart"></i>
+              <div class="header__cart-list header__cart-list--no-cart">
+                <img class="header__cart-no-cart" src="./asset/img/no-cart.png" alt="No cart">
+                <span class="header__cart-no-cart-msg">
+                  Chưa Có Sản Phẩm
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
