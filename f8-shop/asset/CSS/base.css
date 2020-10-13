@@ -57,7 +57,7 @@ html {
 /* Button style */
 
 .btn {
-  min-width: 14rem;
+  min-width: 12.5rem;
   min-height: 3.5rem;
   text-decoration: none;
   border: none;
@@ -75,10 +75,14 @@ html {
 .btn.btn--normal:hover {
   background-color: rgba(0,0,0,0.1);
 }
-
 .btn.btn-primary {
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+.btn.btn-primary:hover {
+  background-color: #FB6445;
+  cursor: pointer;
 }
 
 .btn.btn-disabled {
