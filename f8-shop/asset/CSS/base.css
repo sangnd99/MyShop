@@ -6,6 +6,7 @@
   --border-color: #dbdbdb;
   --header-height: 120px;
   --navbar-height: 28px;
+  --star-gold-color: #FFCE3D
 }
 
 * {
@@ -34,20 +35,26 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /* Test */
 .grid__column-2 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
 }
 
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
 .grid__column-10 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 83.3334%;
   margin-right: 0;
 }
@@ -116,6 +123,61 @@ html {
 /* Sellection */
 
 .select-input {
+  position: relative;
   height: 35px;
-  
+  padding: 10px;
+  background-color: var(--white-color);
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  z-index: 1;
 }
+
+.select-input:hover .select-input__list {
+  display: block;
+}
+
+.select-input__label {
+  font-size: 1.4rem;
+}
+
+.select-input__icon {
+  font-size: 1.1rem;
+  color: #4A4A4A;
+}
+
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 8px);
+  border-radius: 3px;
+  background-color: var(--white-color);
+  padding: 8px 16px;
+  list-style: none;
+  display: none;
+}
+
+.select-input__list::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.select-input__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  display: block;
+  padding: 10px 0;
+}
+
+.select-input__link:hover {
+  color: var(--primary-color);
+}
+
